@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PizzaFiesta</title>
+    <meta name="title" content="PizzaFiesta">
+    <link rel="shortcut icon" href="./assets/images/fapiz.png" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/images/css/style.css">
+  <style>
+    body {
+      background-color: #111;
+      color: #fff;
+      font-family: Arial, sans-serif;
+    }
+    #contact-container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    #contact-container h1 {
+      text-align: center;
+      color:  #d9c98a;
+    }
+    .form-field {
+      margin-bottom: 20px;
+    }
+    .form-field label {
+      display: block;
+      font-size: 18px;
+      margin-bottom: 5px;
+      color:  #d9c98a;
+    }
+    .form-field input[type="text"],
+    .form-field input[type="email"],
+    .form-field textarea {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      background-color: #222;
+      color: #fff;
+      border: 1px solid #d9c98a;
+    }
+    .form-field textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+    .form-field input[type="submit"] {
+      padding: 10px 20px;
+      font-size: 18px;
+      background-color:  #d9c98a;
+      color: #111;
+      border: none;
+      cursor: pointer;
+    }
+    .form-field input[type="submit"]:hover {
+      background-color: #fff;
+      color: #d9c98a;
+    }
+  </style>
+</head>
+<body>
+  <div id="contact-container">
+    <h1>Contactez-nous</h1>
+    <form action="#" method="POST">
+      <div class="form-field">
+        <label for="name">Nom</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-field">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-field">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+      <div class="form-field">
+        <input type="submit" value="Envoyer">
+      </div>
+    </form>
+  </div>
+  <script src="./js/script.js"></script>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  
+</body>
+</html>
+
